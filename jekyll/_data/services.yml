@@ -1,0 +1,20 @@
+- title: Storybook
+  icon: /assets/images/service-icon2.png
+  description: Documentatie en demo toepassing van de verschillende componenten.
+  button_label: Naar Storybook
+  id: to-storybook
+  url: /storybook
+
+- title: Playground
+  icon: /assets/images/service-icon.png
+  description: Ad-hoc toepassing voor het simuleren van use-cases of bugs.
+  button_label: Naar Playground
+  id: to-playground
+  url: /playground
+
+- title: Alliance
+  icon: /assets/images/service-icon.png
+  description: Minimale toepassing die integreert met de aangeleverde artifacts.
+  button_label: Naar Alliance
+  id: to-alliance
+  url: /alliance

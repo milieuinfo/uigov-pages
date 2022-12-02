@@ -1,0 +1,23 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2019",
+        "module": "esnext",
+        "lib": ["es2019", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@domg-lib/playground-processing": ["libs/playground-processing/src/index.ts"],
+            "@domg-lib/version-processing": ["libs/version-processing/src/index.ts"]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
+}

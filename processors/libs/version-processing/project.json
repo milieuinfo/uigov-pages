@@ -1,0 +1,35 @@
+{
+    "name": "version-processing",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/version-processing/src",
+    "projectType": "library",
+    "targets": {
+        "build": {
+            "executor": "@nrwl/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "outputPath": "dist/libs/version-processing",
+                "tsConfig": "libs/version-processing/tsconfig.lib.json",
+                "packageJson": "libs/version-processing/package.json",
+                "main": "libs/version-processing/src/index.ts",
+                "assets": ["libs/version-processing/*.md"]
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["libs/version-processing/**/*.ts"]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+            "options": {
+                "jestConfig": "libs/version-processing/jest.config.ts",
+                "passWithNoTests": true
+            }
+        }
+    },
+    "tags": []
+}

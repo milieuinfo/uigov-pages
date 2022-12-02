@@ -1,0 +1,7 @@
+{
+  "name": "@omg-lib/version-processing",
+  "version": "0.0.1",
+  "bin": {
+    "version-processing": "./src/bin/process-versions.js"
+  }
+}
