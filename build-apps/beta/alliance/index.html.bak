@@ -9,5 +9,5 @@
     <body is="vl-body">
         <div style="color: gray">UIG Alliance - v__UIG-VERSION__</div>
         <applications-root></applications-root>
-    <script src="runtime.d750db85413c4d63.js" type="module"></script><script src="polyfills.077310ab5c077241.js" type="module"></script><script src="main.efd814e9858e933d.js" type="module"></script></body>
+    <script src="runtime.d750db85413c4d63.js" type="module"></script><script src="polyfills.077310ab5c077241.js" type="module"></script><script src="main.e963b7359c073c13.js" type="module"></script></body>
 </html>
