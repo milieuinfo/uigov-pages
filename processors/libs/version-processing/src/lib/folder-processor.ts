@@ -17,9 +17,12 @@ const directoryHasFolder = (path: string, folder: string): boolean => {
     }
 };
 
-export const processDirectory = (processPath: string, url: string, stopFolder: string): Folder[] => {
-    if (directoryHasFolder(processPath, stopFolder)) {
-        return;
+const directoryHasFolderOf = (path: string, folders: string[]): boolean =>
+    folders.reduce<boolean>((hasFolder: boolean, folder: string) => directoryHasFolder(path, folder), false);
+
+export const processDirectory = (processPath: string, url: string, stopFolders: string[]): Folder[] => {
+    if (directoryHasFolderOf(processPath, stopFolders)) {
+        return [];
     }
     const folderList: Folder[] = [];
     const dir: Dir = fs.opendirSync(processPath);
@@ -30,7 +33,7 @@ export const processDirectory = (processPath: string, url: string, stopFolder: s
             folder.name = dirent.name;
             folder.url = url + '/' + dirent.name;
             if (dirent.isDirectory()) {
-                const subfolders = processDirectory(processPath + '/' + dirent.name, folder.url, stopFolder);
+                const subfolders = processDirectory(processPath + '/' + dirent.name, folder.url, stopFolders);
                 if (subfolders?.length > 0) {
                     folder.subfolders = subfolders;
                 }
