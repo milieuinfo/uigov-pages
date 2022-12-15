@@ -1,7 +1,2 @@
-- name: main
-  url: build-apps/main
-  subfolders:
-    - name: 1.1.0
-      url: build-apps/main/1.1.0
-- name: beta-uig
-  url: build-apps/beta-uig
+- name: beta
+  url: build-apps/beta
