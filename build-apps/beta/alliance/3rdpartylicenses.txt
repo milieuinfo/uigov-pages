@@ -1,12 +1,12 @@
-@domg-lib/common-utilities
+@domg-wc/common-utilities
 
-@domg-lib/components
+@domg-wc/components
 
-@domg-lib/elements
+@domg-wc/elements
 
-@domg-lib/map
+@domg-wc/map
 
-@domg-lib/sections
+@domg-wc/sections
 
 @govflanders/vl-ui-accordion
 MIT
