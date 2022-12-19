@@ -1,8 +1,8 @@
-@domg-lib/common-utilities
+@domg-wc/common-utilities
 
-@domg-lib/components
+@domg-wc/components
 
-@domg-lib/elements
+@domg-wc/elements
 
 @govflanders/vl-ui-accordion
 MIT
