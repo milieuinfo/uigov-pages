@@ -1,2 +1,9 @@
-- name: beta
-  url: build-apps/beta
+- name: release
+  url: build-apps/release
+  subfolders:
+    - name: 1.0.0
+      url: build-apps/release/1.0.0
+- name: develop
+  url: build-apps/develop
+- name: develop-apo
+  url: build-apps/develop-apo

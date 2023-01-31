@@ -13,6 +13,6 @@ const sortWithPriorisation = (folders: Folder[], priorisation: string): Folder[]
 const sortReversed = (folders: Folder[]): Folder[] => folders?.sort((f1, f2) => f2.name.localeCompare(f1.name));
 
 export const sortVersioned = (folders: Folder[]): Folder[] => {
-    const firstLevelSorted = sortWithPriorisation(folders, 'main');
+    const firstLevelSorted = sortWithPriorisation(folders, 'release');
     return firstLevelSorted.map((folder) => ({ ...folder, subfolders: sortReversed(folder.subfolders) }));
 };
