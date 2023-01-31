@@ -1,6 +1,6 @@
-import { Dir, Dirent } from 'fs';
+import {Dir, Dirent} from 'fs';
 import * as fs from 'fs';
-import { Folder } from './model/folder.model';
+import {Folder} from './model/folder.model';
 
 const directoryHasFolder = (path: string, folder: string): boolean => {
     const dir: Dir = fs.opendirSync(path);
@@ -17,8 +17,7 @@ const directoryHasFolder = (path: string, folder: string): boolean => {
     }
 };
 
-const directoryHasFolderOf = (path: string, folders: string[]): boolean =>
-    folders.reduce<boolean>((hasFolder: boolean, folder: string) => directoryHasFolder(path, folder), false);
+const directoryHasFolderOf = (path: string, folders: string[]): boolean => folders.some(folder => directoryHasFolder(path, folder))
 
 export const processDirectory = (processPath: string, url: string, stopFolders: string[]): Folder[] => {
     if (directoryHasFolderOf(processPath, stopFolders)) {

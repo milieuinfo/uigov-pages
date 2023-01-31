@@ -7,7 +7,7 @@ import { Folder } from './model/folder.model';
 
 export const buildVersionFolders = (path: string): Folder[] => {
     console.log('building versions folders for', path);
-    const folders = processDirectory(path, 'build-apps', ['storybook', 'playground', 'alliance']);
+    const folders = processDirectory(path, 'build-apps', ['alliance', 'playground', 'storybook']);
     const merged = mergeFirstLevelInSecond(folders);
     return sortVersioned(merged);
 };
