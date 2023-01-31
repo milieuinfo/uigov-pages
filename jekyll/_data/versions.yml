@@ -1,9 +1,23 @@
 - name: release
   url: build-apps/release
   subfolders:
+    - name: 1.2.0
+      url: build-apps/release/1.2.0
+    - name: 1.1.0
+      url: build-apps/release/1.1.0
+    - name: 1.0.1
+      url: build-apps/release/1.0.1
     - name: 1.0.0
       url: build-apps/release/1.0.0
+    - name: .DS_Store
+      url: build-apps/release/.DS_Store
+- name: .DS_Store
+  url: build-apps/.DS_Store
+- name: bugfix
+  url: build-apps/bugfix
 - name: develop
   url: build-apps/develop
 - name: develop-apo
   url: build-apps/develop-apo
+- name: develop-uig
+  url: build-apps/develop-uig
