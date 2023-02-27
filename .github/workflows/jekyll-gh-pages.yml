@@ -35,6 +35,7 @@ jobs:
       - name: Build Versions Yml
         run: |
           cd processors
+          node -v
           rm -rf package-lock.json
           npm install
           npx nx build version-processing
