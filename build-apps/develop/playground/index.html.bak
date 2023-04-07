@@ -9,5 +9,5 @@
     <body is="vl-body">
         <div style="color: gray">UIG Playground - v__UIG-VERSION__</div>
         <playground-app></playground-app>
-    <script src="runtime.5bf7fac12d75da07.js" type="module"></script><script src="polyfills.30e30c06f014e49c.js" type="module"></script><script src="styles.97c1288dfae7ac4e.js" type="module"></script><script src="main.d3c39975b952f685.js" type="module"></script></body>
+    <script src="runtime.5bf7fac12d75da07.js" type="module"></script><script src="polyfills.30e30c06f014e49c.js" type="module"></script><script src="styles.97c1288dfae7ac4e.js" type="module"></script><script src="main.1b3777d5cf76df63.js" type="module"></script></body>
 </html>
