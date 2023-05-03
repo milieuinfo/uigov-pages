@@ -1,8 +1,8 @@
 import * as fs from 'fs';
 import * as YAML from 'yaml';
-import { processDirectory } from './folder-processor';
-import { mergeFirstLevelInSecond } from './folder-merger';
-import { sortVersioned } from './folder-sorter';
+import { processDirectory } from './folder-processing/folder-processor';
+import { mergeFirstLevelInSecond } from './folder-processing/folder-merger';
+import { sortVersioned } from './folder-processing/folder-sorter';
 import { Folder } from './model/folder.model';
 
 export const buildVersionFolders = (path: string): Folder[] => {

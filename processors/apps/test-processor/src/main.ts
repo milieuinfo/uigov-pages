@@ -1,8 +1,17 @@
-import { buildVersionFolders, Folder, writeYmlFile } from '@domg-lib/version-processing';
+import {
+    buildVersionFolders,
+    findHighestVersionUrl,
+    Folder,
+    replaceHighestVersions,
+    writeYmlFile,
+} from '@domg-lib/version-processing';
 import * as YAML from 'yaml';
 
-const versionFolders: Folder[] = buildVersionFolders(
-    '/Users/krisspeltincx/Ontwikkeling/OMG/github/uigov-pages/build-apps'
-);
-writeYmlFile(versionFolders, '/Users/krisspeltincx/Ontwikkeling/OMG/github/uigov-pages/jekyll/_data/versions.yml');
-console.log(YAML.stringify(versionFolders));
+const buildAppsFolder = '/Users/krisspeltincx/Ontwikkeling/OMG/github/uigov-pages/build-apps';
+const appVersionsFolders: Folder[] = buildVersionFolders(buildAppsFolder);
+
+writeYmlFile(appVersionsFolders, '/Users/krisspeltincx/Ontwikkeling/OMG/github/uigov-pages/jekyll/_data/versions.yml');
+console.log(YAML.stringify(appVersionsFolders));
+const highestVersionUrl = findHighestVersionUrl(appVersionsFolders);
+console.log('highestVersionUrl:', highestVersionUrl);
+replaceHighestVersions(buildAppsFolder, highestVersionUrl);

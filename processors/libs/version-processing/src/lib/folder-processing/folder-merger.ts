@@ -1,4 +1,4 @@
-import { Folder } from './model/folder.model';
+import { Folder } from '../model/folder.model';
 
 const merge = (root: Folder, folders: Folder[]): Folder[] =>
     folders.map((folder: Folder) => ({

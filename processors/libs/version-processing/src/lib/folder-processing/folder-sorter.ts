@@ -1,4 +1,4 @@
-import { Folder } from './model/folder.model';
+import { Folder } from '../model/folder.model';
 
 const sortWithPriorisation = (folders: Folder[], priorisation: string): Folder[] =>
     folders.sort((f1, f2) => {
