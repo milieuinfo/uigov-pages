@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Playground</title>
+        <base href="/uigov-pages/build-apps/release/1.6.0/playground/">        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.43a16355a8fad034.css"><link rel="stylesheet" href="main.9d7f5cdae2011243.css"></head>
+    <body is="vl-body">
+        <div style="color: gray">UIG Playground - v__UIG-VERSION__</div>
+        <playground-app></playground-app>
+    <script src="runtime.5bf7fac12d75da07.js" type="module"></script><script src="polyfills.30e30c06f014e49c.js" type="module"></script><script src="styles.97c1288dfae7ac4e.js" type="module"></script><script src="main.1d000ff34d32ff00.js" type="module"></script></body>
+</html>
