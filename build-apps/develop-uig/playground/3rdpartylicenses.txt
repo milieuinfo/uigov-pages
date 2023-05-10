@@ -32,6 +32,9 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 @domg-wc/map
 
+@domg/govflanders-style
+MIT
+
 @govflanders/vl-ui-accordion
 MIT
 
@@ -45,6 +48,9 @@ MIT
 MIT
 
 @govflanders/vl-ui-progress-bar
+MIT
+
+@govflanders/vl-ui-side-navigation
 MIT
 
 @govflanders/vl-ui-tabs
